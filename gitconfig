@@ -1,0 +1,12 @@
+[user]
+	name = Jim Sauer
+	email = 91103894+jim-sauer@users.noreply.github.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	editor = code --wait
+[credential]
+	helper = cache
